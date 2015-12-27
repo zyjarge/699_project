@@ -1,0 +1,27 @@
+//添加户型类型页面
+
+extends layout
+
+block content
+    .content-wrapper
+        // Main content
+        section.content
+            .row
+                .col-md-6
+                    .box.box-info
+                        .box-header.with-border
+                            h3.box-title 添加户型类型
+                        // /.box-header
+                        // form start
+                        form.form-horizontal
+                            .box-body
+                                .form-group
+                                    label.col-sm-4.control-label(for="roomtype") 户型类型名称
+                                    .col-sm-8
+                                        input#roomtype.form-control(placeholder="请填写户型类型名称")
+                            // /.box-body
+                            .box-footer
+                                button.btn.btn-default(type="submit") 取消
+                                button.btn.btn-info.pull-right(type="submit") 确认添加
+                            // /.box-footer
+

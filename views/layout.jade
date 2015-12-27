@@ -1,0 +1,31 @@
+// 布局文件
+doctype html
+html
+    include partials/header_html
+    //
+      BODY TAG OPTIONS:
+      =================
+      Apply one or more of the following classes to get the
+      desired effect
+      |---------------------------------------------------------|
+      | SKINS         | skin-blue                               |
+      |               | skin-black                              |
+      |               | skin-purple                             |
+      |               | skin-yellow                             |
+      |               | skin-red                                |
+      |               | skin-green                              |
+      |---------------------------------------------------------|
+      |LAYOUT OPTIONS | fixed                                   |
+      |               | layout-boxed                            |
+      |               | layout-top-nav                          |
+      |               | sidebar-collapse                        |
+      |               | sidebar-mini                            |
+      |---------------------------------------------------------|
+
+    body.hold-transition.skin-yellow-light.sidebar-mini
+        .wrapper
+            include partials/header_bar
+            include partials/sidebar
+            block content
+        include partials/footer
+        include partials/footer_html
